@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header {
+  padding: 4rem;
+  background-color: dodgerblue;
+  color: white;
+  text-shadow: 1px 1px 2px blue;
+  box-shadow: 0 1px 3px 1px gray;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+main {
+  margin: 5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin: 0;
+}
+.card {
+  padding: 3.5rem 6rem;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 5px 0.5px gray;
+}
+#state, #capital {
+  margin: 0.5rem 0;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  outline: transparent;
+  font-size: medium;
+  border: solid lightgray;
+  border-radius: 0.5rem;
+}
+#state:focus {
+  border: solid powderblue;
+  transition: 150ms;
+}
