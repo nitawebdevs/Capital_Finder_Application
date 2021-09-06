@@ -2,7 +2,7 @@ let state = document.querySelector('#state');
 let capital = document.querySelector('#capital');
 
 const watchState = () => {
-  let stateName = String(state.value);
+  let stateName = state.value.toLowerCase();
   if (data[ stateName ]) {
     capital.innerText = data[ stateName ];
   } else {
@@ -36,62 +36,62 @@ state.addEventListener("blur", function () {
 
 const data = {
 
-  "Andhra Pradesh": "Hyderabad",
+  "andhra pradesh": "Hyderabad",
 
-  "Arunachal Pradesh": "Itanagar",
+  "arunachal pradesh": "Itanagar",
 
-  "Assam": "Dispur",
+  "assam": "Dispur",
 
-  "Bihar": "Patna",
+  "bihar": "Patna",
 
-  "Chhattisgarh": "Raipur",
+  "chhattisgarh": "Raipur",
 
-  "Goa": "Panaji",
+  "goa": "Panaji",
 
-  "Gujarat": "Gandhinagar",
+  "gujarat": "Gandhinagar",
 
-  "Haryana": "Chandigarh",
+  "haryana": "Chandigarh",
 
-  "Himachal Pradesh": "Shimla",
+  "himachal pradesh": "Shimla",
 
-  "Jammu & Kashmir": "Srinagar(Summer)/Jammu(Winter)",
+  "jammu & kashmir": "Srinagar(Summer)/jammu(Winter)",
 
-  "Jharkhand": "Ranchi",
+  "jharkhand": "Ranchi",
 
-  "Karnataka": "Bengaluru",
+  "karnataka": "Bengaluru",
 
-  "Kerala": "Thiruvananthapuram",
+  "kerala": "Thiruvananthapuram",
 
-  "Madhya Pradesh": "Bhopal",
+  "madhya pradesh": "Bhopal",
 
-  "Maharashtra": "Mumbai",
+  "maharashtra": "Mumbai",
 
-  "Manipur": "Imphal",
+  "manipur": "Imphal",
 
-  "Meghalaya": "Shillong",
+  "meghalaya": "Shillong",
 
-  "Mizoram": "Aizawl",
+  "mizoram": "Aizawl",
 
-  "Nagaland": "Kohima",
+  "nagaland": "Kohima",
 
-  "Odisha": "Bhubaneswar",
+  "odisha": "Bhubaneswar",
 
-  "Punjab": "Chandigarh",
+  "punjab": "Chandigarh",
 
-  "Rajasthan": "Jaipur",
+  "rajasthan": "Jaipur",
 
-  "Sikkim": "Gangtok",
+  "sikkim": "Gangtok",
 
-  "Tamil Nadu": "Chennai",
+  "tamil nadu": "Chennai",
 
-  "Telangana": "Hyderabad",
+  "telangana": "Hyderabad",
 
-  "Tripura": "Agartala",
+  "tripura": "Agartala",
 
-  "Uttar Pradesh": "Lucknow",
+  "uttar pradesh": "Lucknow",
 
-  "Uttarakhand": "Dehradun",
+  "uttarakhand": "Dehradun",
 
-  "West Bengal": "Kolkata"
+  "west bengal": "Kolkata"
 
 }
